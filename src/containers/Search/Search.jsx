@@ -1,50 +1,67 @@
 import './Search.css';
-import React, {useState, useEffect} from 'react';
-import { searchFilms } from '../../services/apicalls';
-import Searchbox from '../../Components/Search/Searchbox';
-//import das imagens
+import React, { useEffect, useState } from "react";
+import Moviedetails from "../../components/Moviedetails/Moviedetails";
+import { getSearchedMovies } from "../../services/apicalls";
+
+
 
 const Search = () => {
-
-const [movies, setMovies] = useState([]);
-
-
-const handleInput = (e) => {
-    let x = e.target.value;
-
-  }
+  const [movies, setMovies] = useState([]);
+  const [searchInput, setSearchInput] = useState("");
+  const [selected, setSelected] = useState("");
 
 
-    useEffect(()=>{
-        if(movies.length === 0){
+const searchInputHandler = (e) => {
+    setSearchInput((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
+  };
 
-            searchFilms('alien')
-                .then(res => 
-                    
-                    setMovies(res.data.results)
-                    
-                    )
-                .catch(error => console.log(error));
-        } else {
+useEffect(()=>{
+  const fecthData = async () => {
+    let response = await getSearchedMovies(searchInput);
+    let results = response.data.results
+    setMovies(results)
+}
+fecthData()
+},[searchInput])
 
-            console.log("here are my precious movies!", movies);
-        }
+  const selectMovie = (movie) => {
+    setSelected(movie);
+  };
 
-    },[movies]);
+  
+  return (
+    <div className="searchPage">
+      <div className="searchleftside">
+        <div className="searchBar">
+            <input className="searchInput" type="text" name="input" id="input" title="input" placeholder="Search your movie here"
+              onChange={(e) => { searchInputHandler(e) }}></input>
+        </div>
+        <div className="searchResults">
+          {movies.map((movie) => {
+            return (
+              <div className="movieCard" key={movie.id}>
+              <div onClick={() => selectMovie(movie)}><img className="movieSmallImage" src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} alt={movie.title}/></div>
+                <div >{movie.title}</div> 
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <div className="searchrightside">
+      {
+                selected?.id !== undefined &&
+                <Moviedetails movie={selected} />
+            }
+      </div>
+    </div>
 
-    return(
-            <div className="App">
-              <header className='App-Title'>
-                <h1>The Epic Movieland</h1>
-              </header>
-              <main>
-              <Searchbox handleInput={handleInput} search={Search}/>
-              </main>
-            </div>
-          );
-        }
-    
-
-
+  )
+};
 
 export default Search;
+
+
+
