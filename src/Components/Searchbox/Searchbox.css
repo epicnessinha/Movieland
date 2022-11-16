@@ -1,4 +1,4 @@
-.searchbox {
+/*.searchbox {
     display: block;
     width: 100%;
     padding: 20px;
@@ -17,9 +17,9 @@
   
   .searchbox:focus {
     box-shadow: 0px 0px 8px 3px #f024df;
-  }
+  }*/
 
-  .headerDesign {
+  .searchBoxDesign {
     height: 12vh;
     width: 100vw;
     background-color: lightslategrey;
@@ -28,7 +28,7 @@
     justify-content: space-between;
 }
 
-.rightside{
+.right{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -52,7 +52,7 @@
     transition: 0.5s;
 }
 
-.leftside{
+.left{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -61,7 +61,7 @@
     color: yellowgreen;
 }
 
-.appName{
+.webAppName{
     font-size: xx-large;
     font-weight:500;
     text-decoration:underline;
