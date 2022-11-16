@@ -3,7 +3,7 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <div className='footerDesign'>More About The Movie Database API</div>
+    <div className='footerDesign'>Do you did your binge watching today? Still on time!</div>
   )
 }
 
