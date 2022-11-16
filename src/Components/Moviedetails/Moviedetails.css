@@ -1,0 +1,55 @@
+
+.movieInfoDesign {
+
+    height: 36em;
+    width: 30em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: lightcyan;
+
+    border-radius: 1em;
+
+    color: black;
+    font-weight: bold;
+
+}
+
+.moviePoster {
+
+    height: 28em;
+}
+
+
+.ReleaseAndRating{
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.synopsis{
+    font-size: medium;
+    font-style: italic;
+    margin-left: 2.0em;
+    margin-right: 2.0em;
+    text-align: justify;
+}
+
+.star{
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.rating{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
