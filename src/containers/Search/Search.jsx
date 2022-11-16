@@ -36,7 +36,7 @@ fecthData()
     <div className="searchPage">
       <div className="searchleftside">
         <div className="searchBar">
-            <input className="searchInput" type="text" name="input" id="input" title="input" placeholder="Search your movie here"
+            <input className="searchInput" type="text" name="input" id="input" title="input" placeholder="Search for an awesome movie here!"
               onChange={(e) => { searchInputHandler(e) }}></input>
         </div>
         <div className="searchResults">

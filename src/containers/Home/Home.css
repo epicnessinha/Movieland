@@ -2,21 +2,22 @@
     display: flex;
     flex-direction: row;
     height: 85vh;
-    background-color: lightblue;
+    background-color:rgb(255, 187, 236);
 }
 
 .movieSmallImage{
-    width: 10em; 
+    width: 10.5em; 
 }
 
 .movieCard{
-    width: 12em;
+    width: 12.05em;
     margin-top: 0.5em;
 }
 
 .movieCard:hover{
-    transition: 0.7s;
-    box-shadow: rgba(42, 48, 226, 0.663) 0px 1px 2px, rgb(51, 51, 51) 0px 5px 5px 5px;
+    transition: 0.4s;
+    margin:auto 1px;
+    box-shadow: rgba(245, 35, 217, 0.663) 0px 1px 2px, rgb(51, 51, 51) 0px 5px 5px 5px;
 }
 
 .leftSide{
@@ -27,14 +28,23 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: lightblue; 
+    background-color: rgb(255, 187, 236); 
     overflow-y: scroll;  
     cursor:pointer;
 }
 
 .rightSide{
     width: 35vw;
-    background-color: lightslategrey;
+    background-color:hotpink;
     overflow-y: scroll; 
     padding-bottom: 1em; 
+    border-radius: 10%;
+    margin-bottom: 90px;
+    margin-top: 27px;
+    margin-right: 20px;
+}
+
+.movieSmallImage{
+    border-radius: 15%;
+
 }
