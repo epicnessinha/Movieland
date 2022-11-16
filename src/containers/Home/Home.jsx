@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Moviedetails from "../../components/Moviedetails/Moviedetails";
+import Moviedetails from "../../Components/Moviedetails/Moviedetails";
 import { getPopularMovies } from "../../services/apicalls";
 import "./Home.css";
 
