@@ -1,20 +1,28 @@
 .footerDesign {
 
-    height: 5vh;
-
+    height: 7vh;
     width: 100vw;
-
-    background-color: rgb(230, 173, 215);
-
+    background-color:  rgb(255, 187, 236); 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
-
-    flex-direction: row;
+    color:rgb(135, 11, 180);
+    font-weight: bold;
     justify-content: center;
     align-items: center;
-
-
+    border-radius: 50px;
     position:absolute;
     left:0;
     bottom:0;
-    right:0;
+    right: 0px;;
+}
+
+.gradient {
+
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(#346cdd, #8406d6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
 }

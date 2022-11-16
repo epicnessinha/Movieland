@@ -22,10 +22,10 @@
   .searchBoxDesign {
     height: 12vh;
     width: 100vw;
-    background-color: lightslategrey;
-    display: flex;
+    background-color: rgb(255, 187, 236);
+    display:inline-flex;
     flex-direction: row;
-    justify-content: space-between;
+    border-radius: 50px;
 }
 
 .right{
@@ -36,20 +36,34 @@
     margin-top: 2em;
 }
 
+
+
+
 .linkDesign {
     font-weight: bold;
-    margin-right: 3em;
+    font-size:xx-large;
+    margin-right: 1em;
     margin-bottom: 3em;
-    color: white;
-    cursor: pointer;
-    transition: 0.5s;
+    margin-left: 10em;
+    margin-top: 2em;
+    color: rgb(65, 19, 72);
+    cursor:pointer;
+    transition: 0.05s;
+    justify-content: flex-end;
+    font-family: fantasy;
+    text-decoration:underline;
+     
+   
 }
+
+
 
 .linkDesign:hover {
 
-    color: greenyellow;
-
+    color: rgb(123, 47, 255);
     transition: 0.5s;
+  
+
 }
 
 .left{
@@ -57,17 +71,17 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-left: 3.5em;
-    color: yellowgreen;
+    margin-left: 2em;
+    color: rgb(135, 11, 180);
+   
 }
 
 .webAppName{
     font-size: xx-large;
-    font-weight:500;
-    text-decoration:underline;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-left: 1em;
+    margin-bottom: 0.4em;
+    
 }
 
-.logo{
-    width: 4em;
-}
+
