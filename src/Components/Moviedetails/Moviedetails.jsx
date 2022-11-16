@@ -1,5 +1,6 @@
-import React from 'react';
-import './Moviedetails.css';
+import './Moviedetails.css'
+import React from 'react'
+import start from '../../img/star.png'
 
 const Moviedetails = ({movie}) => {
 

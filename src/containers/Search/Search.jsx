@@ -1,6 +1,6 @@
 import './Search.css';
 import React, { useEffect, useState } from "react";
-import Moviedetails from "../../components/Moviedetails/Moviedetails";
+import Moviedetails from '../../Components/Moviedetails/Moviedetails';
 import { getSearchedMovies } from "../../services/apicalls";
 
 
