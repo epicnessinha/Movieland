@@ -12,9 +12,10 @@ const Moviedetails = ({movie}) => {
                 <div>Release: {movie.release_date}</div>
             
                <div className="rating">{movie.vote_average}<img className='star' src={start} alt='Rating Star'></img></div>
+                 <div className="synopsis">{movie.overview}</div>
             </div>
-           <div className="synopsis">{movie.overview}</div>
-           </div>
+         
+         
           
           
       
