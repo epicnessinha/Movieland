@@ -1,8 +1,8 @@
-<h1>Movieland</h1>
+# Movieland
 
 Technical Challenge React Bootcamp
 
-# Movies App (API)
+## Movies App (API)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
