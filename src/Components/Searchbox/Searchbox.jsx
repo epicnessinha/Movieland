@@ -15,7 +15,7 @@ const Searchbox = () => {
       </div>
     <div className='right'>
       <div className='linkDesign' onClick={()=>setTimeout(()=>{navigate("/")},500)}>Top Movies</div>
-      <div className='linkDesign' onClick={()=>setTimeout(()=>{navigate("/search")},500)}>Premium Search</div>
+      <div className='linkDesign' onClick={()=>setTimeout(()=>{navigate("/search")},500)}>Search</div>
     </div>
   </div> 
   )
