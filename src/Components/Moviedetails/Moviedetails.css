@@ -50,14 +50,4 @@
         
 }
 
-.star{
-    width: 1.5em;
-    height: 1.5em;
-}
 
-.rating{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
