@@ -2,6 +2,8 @@
 
 Technical Challenge React Bootcamp
 
+<img src="https://github.com/epicnessinha/Movieland/blob/master/src/img/homepage.png?raw=true" alt="Homepage" width="35%"/> <img src="https://github.com/epicnessinha/Movieland/blob/master/src/img/search.png?raw=true" alt="Admin" width="35%"/>
+
 ## Movies App (API)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
