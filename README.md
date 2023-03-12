@@ -1,7 +1,8 @@
 # Movieland
 
-Technical Challenge React Bootcamp
+Secon Technical Challenge of the Frontend React Bootcamp
 
+## Visuals
 <img src="https://github.com/epicnessinha/Movieland/blob/master/src/img/homepage.png?raw=true" alt="Homepage" width="35%"/> <img src="https://github.com/epicnessinha/Movieland/blob/master/src/img/search.png?raw=true" alt="Admin" width="35%"/>
 
 ## Movies App (API)
